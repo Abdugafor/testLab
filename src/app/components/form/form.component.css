@@ -1,0 +1,80 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0; 
+}
+
+input[type=number] {
+    -moz-appearance:textfield; 
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 32px;
+    max-width: 800px;
+    margin: 45px auto;
+}
+
+input:not(:nth-child(3)), button {
+    width: 100%;
+    border-radius: 4px;
+    background: var(--extralight-gray);
+    padding: 16px;
+    border: 2px solid var(--extralight-gray);
+}
+
+.agree-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.agree-container input {
+    width: 17px !important;
+    margin-right: 8px;
+}
+
+.agree-container  label {
+  font-size: 16px !important;
+  color: var(--black) !important;
+}
+
+.btn {
+    background: var(--primary) !important;
+    border: 3px solid var(--primary);
+    color: white;
+    transition: all 0.3s;
+}
+
+.btn:hover {
+    border: 3px solid var(--light-gray) ;
+    background: transparent !important;
+    color: var(--black);
+}
+
+
+
+
+
+  input:focus {
+    border: 2px solid var(--mid-gray);
+  }
+
+  
+
+  .error {
+    border: 2px solid var(--dangerous) !important;
+  }
+
+  .error-message {
+    display: block;
+    color: var(--dangerous);
+    margin-top: 10px;
+  }
+
+ 
+
+ 

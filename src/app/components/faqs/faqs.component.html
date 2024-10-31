@@ -1,0 +1,18 @@
+
+<ng-container *ngFor="let faq of faqs">
+        <div class="details">
+            <details class="details__container">
+              <summary class="details__summary">
+                <!-- The title -->
+                <h6 class="details__title">{{faq.question}}</h6>
+              </summary>
+            </details>
+            <!-- The content -->
+            <div class="details__desc">
+              <div class="details__desc-inner">
+                {{faq.answer}}
+              </div>
+            </div>
+          </div>
+</ng-container>
+  

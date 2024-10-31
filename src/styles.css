@@ -1,1 +1,62 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('./reset.css');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import 'swiper/css';
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+h1 {
+    font-size: 52px;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+h3 {
+    font-size: 32px;
+}
+
+h4 {
+    font-size: 24px;
+}
+
+h5 {
+    font-size: 20px;
+}
+
+h6 {
+    font-size: 16px;
+}
+
+h1 , h2 , h3 , h4 , h5 , h6 {
+    font-weight: 500;
+}
+
+p {
+    font-size: 14px;
+    color: var(--mid-gray);
+}
+
+
+:root {
+    --primary: #2A6CEA;
+    --primary-hover: #397DFF;
+    --primary-disabled: #ABCAE6;
+    --green-success: #25CD82;
+    --dangerous: #F13636;
+    --black: #191C1F;
+    --dark-gray: #5E646A;
+    --gray: #83898F;
+    --mid-gray: #C2C8CD;
+    --light-gray: #ECEFF2;
+    --extralight-gray: #F6F8FA;
+    --white: #FFFFFF;
+}
+

@@ -1,27 +1,27 @@
-# LabaratoryLanding
+# TestLab Angular Документация
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.10.
+**[Ссылка на Github Pages](https://abdugafor.github.io/testLab)**
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Установка и Запуск
 
-## Code scaffolding
+Для начала работы с приложением:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+1. Клонируйте проект:
+   ```git clone https://github.com/Abdugafor/testLab```
 
-## Build
+2. Установите зависимости:
+   ```npm install``` 
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Запустите JSON сервер для работы формы:
 
-## Running unit tests
+```npx json-server ./data/data.json```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Запустите приложение:
 
-## Running end-to-end tests
+```ng serve```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+После, приложение будет доступно в браузере по адресу http://localhost:4200.
 
-## Further help
+!!!Внимание: Форма не будет работать в GitHub Pages! Для корректной работы формы требуется локальный JSON сервер.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.

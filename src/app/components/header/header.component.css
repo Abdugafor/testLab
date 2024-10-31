@@ -1,0 +1,100 @@
+
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 26px 0;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 40;
+}
+
+.list {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.list li a {
+    color: var(--white);
+    font-size: 16px;
+}
+
+.list li a:hover {
+    text-decoration: underline;
+}
+
+
+.bar-btn {
+    display: none;
+}
+
+.mob-menu {
+    position: absolute;
+    display: block;
+    inset: 0;
+    /* top: 56px; */
+    width: 100%;
+    height: 0vh;
+    transition: all 0.3s;
+    background: white;
+}
+
+.mob-list {
+    display: none;
+    margin-top: 65px;
+    padding: 20px;
+}
+
+.mob-list li:first-child {
+    border-top: 2px solid var(--extralight-gray);
+    border-bottom: 2px solid var(--extralight-gray);
+}   
+
+.mob-list li {
+    border-bottom: 2px solid var(--extralight-gray);
+    padding: 16px;
+
+}
+
+.mob-list li  a{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--gray);
+    font-size: 18px;
+}
+
+.bg-white {
+    background: var(--white);
+}
+.open {
+    height: 100vh;
+}
+
+.open .mob-list {
+    display: block;
+}
+
+.nav {
+    position: relative;
+    z-index: 40;
+}
+
+
+@media screen and (max-width: 768px) {
+    header {
+        padding: 22px;
+    }
+
+    .bar-btn {
+        display: block;
+    }
+
+    .list {
+        display: none;
+    }
+
+}

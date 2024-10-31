@@ -1,0 +1,33 @@
+<form [formGroup]="feedbackForm" (ngSubmit)="onSubmit()">
+    <div class="group">      
+        <input 
+        type="text"  
+        formControlName="name"
+        placeholder="Имя"
+        [ngClass]="{
+            'error': feedbackForm.get('name')?.invalid && feedbackForm.get('name')?.touched
+        }"
+        >
+       
+        <span class="error-message" *ngIf="feedbackForm.get('name')?.invalid && feedbackForm.get('name')?.touched">Имя обезательно</span>
+      </div>
+      <div class="group">      
+        <input type="number" 
+        placeholder="Телефон"
+        formControlName="phone"
+        [ngClass]="{
+            'error': feedbackForm.get('phone')?.invalid && feedbackForm.get('phone')?.touched
+        }"
+        >
+       
+        <span class="error-message" *ngIf="feedbackForm.get('phone')?.invalid && feedbackForm.get('phone')?.touched">Телефон обезательно</span>
+
+      </div>
+    <div class="agree-container">
+        <input type="checkbox" id="agree"  #checkbox>
+        <label for="agree">Согласен, отказываюсь</label>
+    </div>
+    
+    <button type="submit"  class="btn">Отправить</button>
+</form>
+

@@ -1,0 +1,31 @@
+<header [ngClass]="{ 'bg-white': isMenuOpen }">
+  <div class="nav">
+    <img src="assets/logos/logo.png" alt="logo" />
+  </div>
+
+  <div class="mob-menu" [ngClass]="{ open: isMenuOpen }">
+    <ul class="mob-list">
+        <li><a href="#how-it-works" (click)="navClick()">Как это работает <img src="assets/icons/arrow-right.svg" alt=""></a></li>
+        <li><a href="#third-section" (click)="navClick()">3-й блок  <img src="assets/icons/arrow-right.svg" alt=""></a></li>
+        <li><a href="#faq" (click)="navClick()">Вопросы и ответы  <img src="assets/icons/arrow-right.svg" alt=""></a></li>
+        <li><a href="#form" (click)="navClick()">Форма  <img src="assets/icons/arrow-right.svg" alt=""></a></li>
+    </ul>
+  </div>
+
+  <div class="nav">
+    <button
+      class="bar-btn"
+      (click)="toggleMenu()"
+      [ngClass]="{ 'bar-open': isMenuOpen }"
+    >
+      <img src="assets/icons/bar.svg" alt="" *ngIf="!isMenuOpen"/>
+      <img src="assets/icons/close.svg" alt="" *ngIf="isMenuOpen"/>
+    </button>
+    <ul class="list">
+      <li><a href="#how-it-works" (click)="navClick()">Как это работает</a></li>
+      <li><a href="#third-section" (click)="navClick()">3-й блок</a></li>
+      <li><a href="#faq" (click)="navClick()">Вопросы и ответы</a></li>
+      <li><a href="#form" (click)="navClick()">Форма</a></li>
+    </ul>
+  </div>
+</header>

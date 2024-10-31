@@ -1,0 +1,53 @@
+.swiper-container {
+  position: relative;
+  padding-bottom: 50px; 
+}
+
+.review-card {
+  width: 100%;
+  background: var(--white);
+  padding: 22px;
+  border-radius: 8px;
+  box-shadow: 0px 5px 24px rgba(0, 0, 0, 0.1);
+}
+
+.review-info {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.review-info h6 {
+  margin-bottom: 4px;
+}
+
+.review-desc {
+  color: var(--black);
+}
+
+::ng-deep .swiper-button-prev,
+::ng-deep .swiper-button-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px;
+  z-index: 10;
+}
+
+::ng-deep .swiper-button-prev {
+  left: -40px;
+}
+
+::ng-deep .swiper-button-next {
+  right: -40px;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+  ::ng-deep .swiper-button-prev,
+  ::ng-deep .swiper-button-next {
+    display: none;
+  }
+}
