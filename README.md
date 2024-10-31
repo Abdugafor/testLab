@@ -1,6 +1,6 @@
 # TestLab Angular Документация
 
-**[Ссылка на Netlify (веб-сайт)](https://abdugafor.github.io/testLab)**
+**[Ссылка на Netlify (веб-сайт)](https://testlab-abdu.netlify.app/)**
 
 
 ## Установка и Запуск
